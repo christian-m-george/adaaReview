@@ -31,7 +31,17 @@ const App = () => {
   const [numberOfCorrectAnswers, setNumberOfCorrectAnswers] =
     React.useState<number>(0);
 
-  const quizQuestions: Question[] = [...questions.questions];
+  const shuffleArray = (array: any[]) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  };
+
+  const quizQuestions: Question[] = shuffleArray([...questions.questions]);
 
   return (
     <div
@@ -60,9 +70,11 @@ const App = () => {
         }}
       >
         <h1 style={{ color: "white" }}>ADAA Review</h1>
-        <h1 style={{ color: "white" }}>
-          Questions Correct: {numberOfCorrectAnswers + `/${currentQuestion}`}
-        </h1>
+        {currentQuestion !== 0 ? (
+          <h1 style={{ color: "white" }}>
+            Questions Correct: {numberOfCorrectAnswers + `/${currentQuestion}`}
+          </h1>
+        ) : null}
       </div>
       {quizQuestions[currentQuestion].type === QuestionType.MultipleChoice ? (
         <MultipleChoiceQuestion

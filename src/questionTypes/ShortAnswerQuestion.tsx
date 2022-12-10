@@ -64,7 +64,6 @@ const ShortAnswerQuestion = (props: Props): JSX.Element => {
         }}
       >
         <button
-          className="select"
           onMouseOver={mouseOver}
           onMouseOut={mouseOut}
           style={{

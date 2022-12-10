@@ -14,14 +14,14 @@ const MultipleChoiceQuestion = (props: Props): JSX.Element => {
     const button: HTMLButtonElement = event.currentTarget;
     button.setAttribute(
       "style",
-      "background-color: lightgrey; margin: 5px;width: 20%;height: 40px;fontSize: 18px;border-radius: 12px;color: white;color:black"
+      "background-color: lightgrey; margin: 5px;width: 20%;height: 40px;fontSize: .8em;border-radius: 12px;color: white;color:black"
     );
   };
   const mouseOut = (event: React.MouseEvent<HTMLButtonElement>) => {
     const button: HTMLButtonElement = event.currentTarget;
     button.setAttribute(
       "style",
-      "background-color: #202124; margin: 5px;width: 20%;height: 40px;fontSize: 18px;border-radius: 12px;color: white;color:white"
+      "background-color: #202124; margin: 5px;width: 20%;height: 40px;fontSize: .8em;border-radius: 12px;color: white;color:white"
     );
   };
   return (
@@ -56,7 +56,6 @@ const MultipleChoiceQuestion = (props: Props): JSX.Element => {
         {props.question.answers.map((sq, i) => {
           return (
             <button
-              className="select"
               onMouseOver={mouseOver}
               onMouseOut={mouseOut}
               key={i}
@@ -64,7 +63,7 @@ const MultipleChoiceQuestion = (props: Props): JSX.Element => {
                 margin: 5,
                 width: "20%",
                 height: 40,
-                fontSize: 21,
+                fontSize: ".8em",
                 borderRadius: 12,
                 backgroundColor: "#202124",
                 color: "white",
