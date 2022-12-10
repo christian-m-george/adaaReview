@@ -1,0 +1,92 @@
+{}
+
+A binary heap is a nearly complete binary tree filled on all levels except possibly the lowest level where leaves are pushed left-most. Heaps are usually implemented as an array. If a binary heap contains 100 elements (nodes), what is the height of the corresponding binary tree?
+
+  n 
+  7 
+  O(n) 
+  9 
+  100 
+ 
+Question 2
+0 / 2 pts
+A binary heap is a nearly complete binary tree filled on all levels except possibly the lowest level where leaves are pushed left-most. Heaps are usually implemented as an array. An array A that represents a heap is an object with two attributes. What are the two attributes needed?
+
+Your Answer:
+The objects that make up the heap need to keep track of 1) a value, so that each object can be compared, and 2) index so that it is possible to keep track of where each object belongs.
+
+array length and heap size
+ 
+IncorrectQuestion 3
+0 / 1 pts
+A Tree is an abstract data type.
+
+  True 
+  False 
+ 
+IncorrectQuestion 4
+0 / 1 pts
+A Tree is a data structure.
+
+  True 
+  False 
+ 
+Question 5
+1 / 1 pts
+An Array is a data structure.
+
+  True 
+  False 
+ 
+IncorrectQuestion 6
+0 / 1 pts
+A List is a data structure.
+
+  True 
+  False 
+ 
+Question 7
+2 / 2 pts
+A 2-3 tree is a tree in which each vertex which is not a leaf has 2 or 3 sons, and every path from the root to a leaf is of the same length. What is the range of the number of leaves in a 2-3 tree of height h?
+
+Your Answer:
+between (2^h to 3^h) + 1
+
+ 
+Question 8
+2 / 2 pts
+A 2-3 tree is a tree in which each vertex which is not a leaf has 2 or 3 sons, and every path from the root to a leaf is of the same length. The time to find an element in 2-3 tree is proportional to the height of the tree. If a 2-3 tree has n elements, what is the search time in O-notation in terms of n?
+
+  n 
+  O(log n) 
+  O(n) 
+  3 
+  2 
+ 
+Question 9
+1 / 1 pts
+Inserting an element into a heap takes O(1) runtime.
+
+  True 
+  False 
+ 
+Question 10
+1 / 1 pts
+The minimum in a min-heap can be found in O(1) runtime.
+
+  True 
+  False 
+ 
+Question 11
+1 / 1 pts
+If the maximum in a heap is the first element, then the minimum in this heap must be the last element.
+
+  True 
+  False 
+ 
+Question 12
+1 / 1 pts
+The minimum in a min-heap can be found in O(n) runtime.
+
+  True 
+  False 

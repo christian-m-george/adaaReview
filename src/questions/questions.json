@@ -1,0 +1,508 @@
+{
+  "questions": [
+    {
+      "type": "mc",
+      "question": "A binary heap is a nearly complete binary tree filled on all levels except possibly the lowest level where leaves are pushed left-most. Heaps are usually implemented as an array. If a binary heap contains 100 elements (nodes), what is the height of the corresponding binary tree?",
+      "answers": [
+        { "text": "n", "correct": false },
+        { "text": "7", "correct": true },
+        { "text": "O(n)", "correct": false },
+        { "text": "9", "correct": false },
+        { "text": "100", "correct": false }
+      ]
+    },
+    {
+      "type": "sa",
+      "question": "A binary heap is a nearly complete binary tree filled on all levels except possibly the lowest level where leaves are pushed left-most. Heaps are usually implemented as an array. An array A that represents a heap is an object with two attributes. What are the two attributes needed?",
+      "answers": ["array length", "heap size"]
+    },
+    {
+      "type": "mc",
+      "question": "A Tree is an abstract data type.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A Tree is a data structure.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "An Array is a data structure.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A List is a data structure.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "sa",
+      "question": "A 2-3 tree is a tree in which each vertex which is not a leaf has 2 or 3 sons, and every path from the root to a leaf is of the same length. What is the range of the number of leaves in a 2-3 tree of height h?.",
+      "answers": ["2^h", "3^h"]
+    },
+    {
+      "type": "mc",
+      "question": "A 2-3 tree is a tree in which each vertex which is not a leaf has 2 or 3 sons, and every path from the root to a leaf is of the same length. The time to find an element in 2-3 tree is proportional to the height of the tree. If a 2-3 tree has n elements, what is the search time in O-notation in terms of n?",
+      "answers": [
+        { "text": "n", "correct": false },
+        { "text": "O(log n)", "correct": true },
+        { "text": "O(n)", "correct": false },
+        { "text": "3", "correct": false },
+        { "text": "2", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Inserting an element into a heap takes O(1) runtime.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "The minimum in a min-heap can be found in O(1) runtime.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "If the maximum in a heap is the first element, then the minimum in this heap must be the last element.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "The minimum in a min-heap can be found in O(n) runtime.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A Queue is an abstract data type.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A Stack is an abstract data type.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. The size of the left subtree must be larger than the size of the right subtree since nodes must be pushed left.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. The key of a node N is larger than the keys of its left and right children.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. What is the relationship between the key of a node and the key of its right child?",
+      "answers": [
+        { "text": "node.key <= node.right.key ", "correct": false },
+        { "text": "node.key > node.right.key ", "correct": false },
+        { "text": "node.key >= node.right.key ", "correct": false },
+        { "text": "node.key < node.right.key ", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. Find/Search/Get in a binary search tree with n nodes always has runtime of O(log n) regardless of insertion order.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False ", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. Find/Search/Get in a binary search tree with n nodes has an expected runtime of O(log n) for balanced trees.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False ", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. Find/Search/Get in a binary search tree with n nodes and height h always has runtime of O(h).",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False ", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. If the left child exists then the predecessor of Node N is the maximum in the tree rooted at the left child.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False ", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. If the right child exists then the successor of Node N is the minimum in the tree rooted at the right child.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False ", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. If the right child exists then the successor of Node N is the maximum in the tree rooted at the right child.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False ", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. We can find the minimum by following the right child pointers from root until we encounter a leaf.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False ", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. In-order walks provide the correct order regardless of the tree balance.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False ", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Find/Search/Get in a binary search tree with n nodes and height h always has runtime of O(h) regardless of insertion order.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False ", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. What is the relationship between the key of a node and the key of its right child?",
+      "answers": [
+        { "text": "node.right.key < node.key", "correct": false },
+        { "text": "node.right.key = node.key", "correct": false },
+        { "text": "node.right.key > node.key", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Recall that a self-balancing tree is a search tree data structure in which insert/delete operations may trigger a partial rebuild of the tree. Select self-balancing search tree data structures discussed/presented in class.",
+      "answers": [
+        { "text": "AVL Tree ", "correct": false },
+        { "text": "Binary Search Tree", "correct": false },
+        { "text": "Red-Black Trees", "correct": true },
+        { "text": "Splay Trees", "correct": false },
+        { "text": "AA Tree", "correct": false },
+        { "text": "B Tree", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Recall that a self-balancing tree is a search tree data structure in which insert/delete operations may trigger a partial rebuild of the tree. Select the correct statements about self-balancing trees.",
+      "answers": [
+        {
+          "text": "Self-balancing trees may transform part of the tree at insertion to keep the height proportional to log2(n).",
+          "correct": true
+        },
+        {
+          "text": "Self-balancing trees rebuild the whole tree for every insertion to keep the height minimal.",
+          "correct": false
+        },
+        {
+          "text": "Self-balancing trees rebuild the whole tree after some delete operations to keep the height minimal.",
+          "correct": true
+        },
+        { "text": "Splay Trees", "correct": false },
+        {
+          "text": "Self-balancing trees perform an in-order walk upon an insert operation.",
+          "correct": true
+        },
+        {
+          "text": "Self-balancing trees rebuild the tree when height is larger than 2 log2(n)",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees were introduced by one of the co-authors of our text book.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees were the first self-balancing trees introduced.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees are binary search trees.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees store the size of the subtree rooted at a node in that node.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, 𝛼⋅size(node) ≤ size(left[node])",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, size(right[node]) ≤ 𝛼⋅size(node)",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, size(left[node]) ≤ 𝛼⋅size(node)",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "If 𝑇 is an 𝛼-weight-balanced binary search tree then 𝑇 is also 𝛼-height-balanced.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "If 𝑇 is an 𝛼-weight-balanced binary search tree then 𝑇 is also 𝛼-height-balanced.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Hash tables are an implementation of the ADT dictionary. They are arrays which utilize hash functions. What do we call it when two keys are mapped to the same hash value?",
+      "answers": [
+        { "text": "Collision", "correct": true },
+        { "text": "Hashing", "correct": false },
+        { "text": "Same", "correct": false },
+        { "text": "KeyOutOfBoundError", "correct": false },
+        { "text": "Chaining", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A hash function has fixed input and output size.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "sa",
+      "question": "If we implement a hash table as an array of size 1024, what does the output of our hash function have to satisfy (related to the definition of a hash function) in order for our program not to constantly crash?",
+      "answers": ["valid index"]
+    },
+    {
+      "type": "mc",
+      "question": "When two keys are mapped to the same hash value, what is the name of the method to store data in the corresponding array entry?",
+      "answers": [
+        { "text": "Chaining", "correct": true },
+        { "text": "Duplication", "correct": false },
+        { "text": "Hashing", "correct": false },
+        { "text": "KeyOutOfBoundError", "correct": false },
+        { "text": "Collision", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A hash function has fixed output size.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A hash function has a fixed input size.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Select the methods which a hash table implements.",
+      "answers": [
+        { "text": "Sort", "correct": false },
+        { "text": "Insert", "correct": true },
+        { "text": "Delete", "correct": true },
+        { "text": "Min", "correct": false },
+        { "text": "Find", "correct": true },
+        { "text": "Predecessor", "correct": false }
+      ]
+    },
+    {
+      "type": "sa",
+      "question": "Name the amortization analysis methods discussed  in class.",
+      "answers": ["amortization", "aggregate", "potential"]
+    },
+    {
+      "type": "mc",
+      "question": "If we have an algorithm A for a problem P and this algorithm is of complexity O(n) then the problem P is of complexity at least O(n).",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "The complexity of an algorithm A which solves a problem P is an upper bound on the complexity of P.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "If we have an algorithm A for a problem P and this algorithm is of complexity O(n) then the problem P is of complexity O(n).",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Any comparison sort algorithm requires 𝛺(n log n) comparisons in the worst case.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Θ provides a tight bound.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Ω provides an asymptotic lower bound.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "O provides an asymptotic upper bound.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Ω provides an asymptotic upper bound.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "All objects/elements may be represented by integers.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Union-Find data structures may be implemented using a list of trees.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Union-Find data structures may be implemented using one singly-linked list.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "The find operation returns a random element from the set the element belongs to.",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "sa",
+      "question": "Name two applications for Union-Find structures.",
+      "answers": ["social media", "nsa"]
+    },
+    {
+      "type": "sa",
+      "question": "Name two improvements that can be used on QuickUnion and QuickFind (one each) to get a better worst-case run-time.",
+      "answers": ["weighted", "compress"]
+    }
+  ]
+}
