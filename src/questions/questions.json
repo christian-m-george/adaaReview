@@ -503,6 +503,174 @@
       "type": "sa",
       "question": "Name two improvements that can be used on QuickUnion and QuickFind (one each) to get a better worst-case run-time.",
       "answers": ["weighted", "compress"]
-    }
+    },
+    {
+       "type": "sa",
+       "question": "A binary heap is a nearly complete binary tree filled on all levels except possibly the lowest level where leaves are pushed left-most. Heaps are usually implemented as an array. Each node in a heap satisfies the heap property. What is the name of a heap in which every node’s value is less than (or equal to) the values of its children?",
+       "answers": ["min-heap"]
+     },
+     {
+       "type": "mc",
+       "question": "A Queue is a data structure.",
+       "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "A Stack is a data structure.",
+        "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Removing the root in a heap takes O(log n) runtime.",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. All keys of nodes in the left subtree of a node N are smaller than the key of N.",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. What is the relationship between the key of a node and the key of its left child?",
+        "answers": [
+          { "text": "node.left.key < node.key ", "correct": true },
+          { "text": "node.left.key > node.key ", "correct": false },
+          { "text": "node.left.key >= node.key ", "correct": false },
+          { "text": "node.left.key <= node.key", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. Find/Search/Get in a binary search tree with n nodes and height h has worst-case runtime of O(n).",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. Left and right children are roots of left and right subtrees, respectively. We can find the maximum by following the left child pointers from root until we encounter a leaf.",
+        "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "A binary search tree (BST) is a linked-node based binary tree which stores key-value pairs (or just keys) in each node. What is the relationship between the key of a node and the key of its left child?",
+        "answers": [
+          { "text": "node.left.key < node.key  ", "correct": true },
+          { "text": "node.left.key > node.key  ", "correct": false },
+          { "text": "node.left.key = node.key  ", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees store the size of the tree in the root.",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A Scapegoat tree provides worst-case O(log(n)) lookup time for a tree with n nodes.",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, 0 <= 𝛼 <= 1/2 .",
+        "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, 𝛼⋅size(node) ≤ size(right[node])",
+        "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees store the size of the tree in the root.",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Hash tables utilize hash functions. Hash functions have certain properties. A hash function has fixed input size.",
+        "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "The complexity of an algorithm 𝐴 which solves a problem 𝑃 is a lower bound on the complexity of 𝑃.",
+        "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Any comparison sort algorithm requires 𝛺(𝑛log𝑛) comparisons in the worst case.",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Θ provides an asymptotic upper bound.",
+        "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "Union-Find data structures may be implemented using one array.",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "A Union-Find data structure stores a collection of disjoint sets.",
+        "answers": [
+          { "text": "True", "correct": true },
+          { "text": "False", "correct": false }
+        ]
+      },
+      {
+        "type": "mc",
+        "question": "The union operation merges all elements of the data structure.",
+        "answers": [
+          { "text": "True", "correct": false },
+          { "text": "False", "correct": true }
+        ]
+      }
   ]
 }
