@@ -97,6 +97,7 @@ const ShortAnswerQuestion = (props: Props): JSX.Element => {
               props.setAnswers(newAnswerArray);
               props.setCurrentQuestion(props.currentQuestion + 1);
             }
+            setAnswer("");
           }}
         >
           Submit
