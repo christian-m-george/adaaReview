@@ -111,10 +111,10 @@ const App = () => {
       )}
       <div
         style={{
-          bottom: 80,
+          bottom: 30,
           position: "absolute",
           width: "50%",
-          height: 300,
+          height: 100,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
