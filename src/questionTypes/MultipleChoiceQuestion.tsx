@@ -7,6 +7,8 @@ type Props = {
   setCurrentQuestion: React.Dispatch<React.SetStateAction<number>>;
   currentQuestion: number;
   numberOfCorrectAnswers: number;
+  answers: string[];
+  setAnswers: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
 const MultipleChoiceQuestion = (props: Props): JSX.Element => {
@@ -49,8 +51,6 @@ const MultipleChoiceQuestion = (props: Props): JSX.Element => {
       <div
         style={{
           display: "flex",
-          //   flexDirection: "column",
-          //   justifyContent: "left",
         }}
       >
         {props.question.answers.map((sq, i) => {
@@ -70,11 +70,17 @@ const MultipleChoiceQuestion = (props: Props): JSX.Element => {
               }}
               onClick={() => {
                 if (sq.correct) {
+                  const newAnswerArray = props.answers;
+                  newAnswerArray[props.currentQuestion] = 'correct'
+                  props.setAnswers(newAnswerArray)
                   props.setNumberofCorrectAnswers(
                     props.numberOfCorrectAnswers + 1
                   );
                   props.setCurrentQuestion(props.currentQuestion + 1);
                 } else {
+                  const newAnswerArray = props.answers;
+                  newAnswerArray[props.currentQuestion] = 'wrong'
+                  props.setAnswers(newAnswerArray)
                   props.setCurrentQuestion(props.currentQuestion + 1);
                 }
               }}

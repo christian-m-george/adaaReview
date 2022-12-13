@@ -1,7 +1,9 @@
 import React from "react";
+import QuestionMap from "./questionMap/QuestionMap";
 import questions from "./questions/questions.json";
 import MultipleChoiceQuestion from "./questionTypes/MultipleChoiceQuestion";
 import ShortAnswerQuestion from "./questionTypes/ShortAnswerQuestion";
+import { shuffleArray } from "./utils/shuffle";
 
 export type Question = {
   type: string;
@@ -27,21 +29,16 @@ export enum QuestionType {
 }
 
 const App = () => {
+  const [shuffle, setShuffle] = React.useState<boolean>(false);
+  const quizQuestions: Question[] = React.useMemo(() => {
+    return shuffleArray([...questions.questions]);
+  }, [shuffle]);
   const [currentQuestion, setCurrentQuestion] = React.useState<number>(0);
   const [numberOfCorrectAnswers, setNumberOfCorrectAnswers] =
     React.useState<number>(0);
-
-  const shuffleArray = (array: any[]) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      const temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-    return array;
-  };
-
-  const quizQuestions: Question[] = shuffleArray([...questions.questions]);
+  const [answers, setAnswers] = React.useState<string[]>(
+    new Array(quizQuestions.length).fill("")
+  );
 
   return (
     <div
@@ -54,6 +51,7 @@ const App = () => {
         backgroundColor: "#202124",
       }}
     >
+      <QuestionMap answers={answers}></QuestionMap>
       <div
         style={{
           width: "100%",
@@ -72,17 +70,33 @@ const App = () => {
         <h1 style={{ color: "white" }}>ADAA Review</h1>
         {currentQuestion !== 0 ? (
           <h1 style={{ color: "white" }}>
-            Questions Correct: {numberOfCorrectAnswers + `/${currentQuestion}`}
+            Questions Correct:{" "}
+            {answers.filter((answer) => {
+              return answer === "correct";
+            }).length + `/${quizQuestions.length}`}
           </h1>
         ) : null}
       </div>
-      {quizQuestions[currentQuestion].type === QuestionType.MultipleChoice ? (
+      {currentQuestion === quizQuestions.length ? (
+        <button
+          onClick={() => {
+            setShuffle(!shuffle);
+            setCurrentQuestion(0);
+            setAnswers(new Array(quizQuestions.length).fill(""));
+          }}
+        >
+          Click here to start over
+        </button>
+      ) : quizQuestions[currentQuestion].type ===
+        QuestionType.MultipleChoice ? (
         <MultipleChoiceQuestion
           setNumberofCorrectAnswers={setNumberOfCorrectAnswers}
           setCurrentQuestion={setCurrentQuestion}
           question={quizQuestions[currentQuestion] as MCQuestion}
           currentQuestion={currentQuestion}
           numberOfCorrectAnswers={numberOfCorrectAnswers}
+          answers={answers}
+          setAnswers={setAnswers}
         />
       ) : (
         <ShortAnswerQuestion
@@ -91,8 +105,40 @@ const App = () => {
           question={quizQuestions[currentQuestion] as SAQuestion}
           currentQuestion={currentQuestion}
           numberOfCorrectAnswers={numberOfCorrectAnswers}
+          answers={answers}
+          setAnswers={setAnswers}
         />
       )}
+      <div
+        style={{
+          bottom: 80,
+          position: "absolute",
+          width: "50%",
+          height: 300,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <button
+          style={{ width: 150, height: 80, margin: 20, borderRadius: 10 }}
+          disabled={currentQuestion === 0}
+          onClick={() => {
+            setCurrentQuestion(currentQuestion - 1);
+          }}
+        >
+          Previous Question
+        </button>
+        <button
+          style={{ width: 150, height: 80, margin: 20, borderRadius: 10 }}
+          disabled={currentQuestion === quizQuestions.length - 1}
+          onClick={() => {
+            setCurrentQuestion(currentQuestion + 1);
+          }}
+        >
+          Next Question
+        </button>
+      </div>
     </div>
   );
 };

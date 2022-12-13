@@ -7,6 +7,8 @@ type Props = {
   setCurrentQuestion: React.Dispatch<React.SetStateAction<number>>;
   currentQuestion: number;
   numberOfCorrectAnswers: number;
+  answers: string[];
+  setAnswers: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
 const ShortAnswerQuestion = (props: Props): JSX.Element => {
@@ -49,7 +51,7 @@ const ShortAnswerQuestion = (props: Props): JSX.Element => {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <textarea
-          style={{ width: "97%", height: 90, fontSize:22,padding:8 }}
+          style={{ width: "97%", height: 90, fontSize: 22, padding: 8 }}
           onChange={(e) => {
             setAnswer(e.target.value);
           }}
@@ -84,9 +86,15 @@ const ShortAnswerQuestion = (props: Props): JSX.Element => {
               }
             }
             if (includesAllTerms) {
+              const newAnswerArray = props.answers;
+              newAnswerArray[props.currentQuestion] = "correct";
+              props.setAnswers(newAnswerArray);
               props.setNumberofCorrectAnswers(props.numberOfCorrectAnswers + 1);
               props.setCurrentQuestion(props.currentQuestion + 1);
             } else {
+              const newAnswerArray = props.answers;
+              newAnswerArray[props.currentQuestion] = "wrong";
+              props.setAnswers(newAnswerArray);
               props.setCurrentQuestion(props.currentQuestion + 1);
             }
           }}
