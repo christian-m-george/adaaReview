@@ -663,6 +663,306 @@
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
       ]
+    },
+    {
+      "type": "mc",
+      "question": "An ADT defines the behavior of a data implementation from the point of the User.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "An data structure a representation of the data (organization, storage, and management) from the point of the programmer.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "An ADT can have several data structures associated with it.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "An ADT is implementation dependent.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "An data structure a representation of the data (organization, storage, and management) from the point of the programmer.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "sa",
+      "question": "An array that implements a heap is usually of length power-of-two. If a heap has size 126, what is the minimum sizwe of the corresponding array?",
+      "answers": ["126"]
+    },
+    {
+      "type": "sa",
+      "question": "A binary heap contains 28 nodes. What is the height of the corresponding array?",
+      "answers": ["5"]
+    },
+    {
+      "type": "mc",
+      "question": "A data structure a representation of the data (organization, storage, and management) from the point of the programmer.",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "sa",
+      "question": "If a heap is implemented in an array, and the maximum in that heap is the first element of the array, what type of heap is it?",
+      "answers": ["max-heap"]
+    },
+    {
+      "type": "mc",
+      "question": "In a 2-3 tree, each node is labeled with the smallest value in the left subree and the largest value in the right subtree",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "In a 2-3 tree, every path from the root to a leaf has length 2 or length 3",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "In a 2-3 tree, data is only stored in the leaves",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "In a 2-3 tree, data is ordered left to right",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "BSTs form doubly linked lists",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "In a BST, all keys of nodes in the right subtree of a node N are smaller than the key of N",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "In a BST, keys must be integers",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "The minimum key in a BST is the root",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Post order walks provide the correct key order regardless of balance",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A BST with n nodes has height at least log base 2 of n",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Keys in a BST must be comparable",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "sa",
+      "question": "Name 4 types of self balancing trees",
+      "answers": ["red black", "avl", "scapegoat", "splay"]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees store the height of the whole tree in the root",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees store the height of the subtree rooted at node N that node N",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees store the weight of the subree rooted at node N in that node N",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A measure of tree balance is the parameter α. For a Scapegoat tree size(left[node]) ≤ α size(node) ",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A measure of tree balance is the parameter α. For a Scapegoat tree 1/2 ≤ α ≤ 1 ",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "If a partial tree rebuild is triggered by insertion of of a deep node N, the scapegoat node is an ancestor of the Node N",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "The roots of th etrees in a Fibonacci heap are stored in a doubly linked list",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Fibonacci heaps consolidate trees after each delete_min operation",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Nodes in a Fibonacci heap have parent pointers",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "A node N in a Fibonacci heap has pointers to each of its children",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Find/search/get in an array with n nodes always has runtime of O(n)",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "In a BST with n nodes, the BST key property affords us to retrieve all data in order in O(n)",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Find/search/get in a BST with n nodes and height h always has runtime O(log n)",
+      "answers": [
+        { "text": "True", "correct": false },
+        { "text": "False", "correct": true }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Find/search/get in a 2-3 tree with n nodes always has runtime of O(log n)",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Scapegoat trees achieve O(log n) amortized runtime complexity for all operations insert, delete, search",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Delete_min in a Fibonacci heap has amortized runtime O(log n)",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Amortization is used for the evaluation of a sequence of operations",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
+    },
+    {
+      "type": "mc",
+      "question": "Amortized analysis evaluates the average cost",
+      "answers": [
+        { "text": "True", "correct": true },
+        { "text": "False", "correct": false }
+      ]
     }
   ]
 }
