@@ -51,7 +51,10 @@ const App = () => {
         backgroundColor: "#202124",
       }}
     >
-      <QuestionMap answers={answers}></QuestionMap>
+      <QuestionMap
+        answers={answers}
+        setQuestion={setCurrentQuestion}
+      ></QuestionMap>
       <div
         style={{
           width: "100%",

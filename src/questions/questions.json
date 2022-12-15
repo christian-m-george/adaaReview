@@ -260,7 +260,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees were introduced by one of the co-authors of our text book.",
+      "question": "Scapegoat trees were introduced by one of the co-authors of our text book.",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -268,7 +268,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees were the first self-balancing trees introduced.",
+      "question": "Scapegoat trees were the first self-balancing trees introduced.",
       "answers": [
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
@@ -276,7 +276,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees are binary search trees.",
+      "question": "Scapegoat trees are binary search trees.",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -284,7 +284,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees store the size of the subtree rooted at a node in that node.",
+      "question": "Scapegoat trees store the size of the subtree rooted at a node in that node.",
       "answers": [
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
@@ -292,7 +292,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, 𝛼⋅size(node) ≤ size(left[node])",
+      "question": "A measure of balance is the parameter 𝛼. For a Scapegoat tree, 𝛼⋅size(node) ≤ size(left[node])",
       "answers": [
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
@@ -300,7 +300,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, size(right[node]) ≤ 𝛼⋅size(node)",
+      "question": "A measure of balance is the parameter 𝛼. For a Scapegoat tree, size(right[node]) ≤ 𝛼⋅size(node)",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -308,7 +308,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, size(left[node]) ≤ 𝛼⋅size(node)",
+      "question": "A measure of balance is the parameter 𝛼. For a Scapegoat tree, size(left[node]) ≤ 𝛼⋅size(node)",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -570,7 +570,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees store the size of the tree in the root.",
+      "question": "Scapegoat trees store the size of the tree in the root.",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -578,7 +578,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A Scapegoat tree provides worst-case O(log(n)) lookup time for a tree with n nodes.",
+      "question": "A Scapegoat tree provides worst-case O(log(n)) lookup time for a tree with n nodes.",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -586,7 +586,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, 0 <= 𝛼 <= 1/2 .",
+      "question": "A measure of balance is the parameter 𝛼. For a Scapegoat tree, 0 <= 𝛼 <= 1/2 .",
       "answers": [
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
@@ -594,7 +594,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. A measure of balance is the parameter 𝛼. For a Scapegoat tree, 𝛼⋅size(node) ≤ size(right[node])",
+      "question": "A measure of balance is the parameter 𝛼. For a Scapegoat tree, 𝛼⋅size(node) ≤ size(right[node])",
       "answers": [
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
@@ -602,7 +602,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees are search trees which upon insert/delete operations rarely but expensively choose a scapegoat node and completely rebuild the subtree rooted at it into a complete tree. The following is a True/False question about Scapegoat trees. Scapegoat trees store the size of the tree in the root.",
+      "question": "Scapegoat trees store the size of the tree in the root.",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -674,7 +674,7 @@
     },
     {
       "type": "mc",
-      "question": "An data structure a representation of the data (organization, storage, and management) from the point of the programmer.",
+      "question": "A data structure is a representation of the data (organization, storage, and management) from the point of the programmer.",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -697,16 +697,8 @@
       ]
     },
     {
-      "type": "mc",
-      "question": "An data structure a representation of the data (organization, storage, and management) from the point of the programmer.",
-      "answers": [
-        { "text": "True", "correct": true },
-        { "text": "False", "correct": false }
-      ]
-    },
-    {
       "type": "sa",
-      "question": "An array that implements a heap is usually of length power-of-two. If a heap has size 126, what is the minimum sizwe of the corresponding array?",
+      "question": "An array that implements a heap is usually of length power-of-two. If a heap has size 126, what is the minimum size of the corresponding array?",
       "answers": ["126"]
     },
     {
@@ -715,21 +707,13 @@
       "answers": ["5"]
     },
     {
-      "type": "mc",
-      "question": "A data structure a representation of the data (organization, storage, and management) from the point of the programmer.",
-      "answers": [
-        { "text": "True", "correct": true },
-        { "text": "False", "correct": false }
-      ]
-    },
-    {
       "type": "sa",
       "question": "If a heap is implemented in an array, and the maximum in that heap is the first element of the array, what type of heap is it?",
       "answers": ["max-heap"]
     },
     {
       "type": "mc",
-      "question": "In a 2-3 tree, each node is labeled with the smallest value in the left subree and the largest value in the right subtree",
+      "question": "In a 2-3 tree, each node is labeled with the smallest value in the left subtree and the largest value in the right subtree",
       "answers": [
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
@@ -838,7 +822,7 @@
     },
     {
       "type": "mc",
-      "question": "Scapegoat trees store the weight of the subree rooted at node N in that node N",
+      "question": "Scapegoat trees store the weight of the subtree rooted at node N in that node N",
       "answers": [
         { "text": "True", "correct": false },
         { "text": "False", "correct": true }
@@ -870,7 +854,7 @@
     },
     {
       "type": "mc",
-      "question": "The roots of th etrees in a Fibonacci heap are stored in a doubly linked list",
+      "question": "The roots of the trees in a Fibonacci heap are stored in a doubly linked list",
       "answers": [
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
@@ -992,12 +976,12 @@
     },
     {
       "type": "sa",
-      "question": "In a flow network, what is the name of a node that hos only outgoing flow?",
+      "question": "In a flow network, what is the name of a node that has only outgoing flow?",
       "answers": ["source"]
     },
     {
       "type": "sa",
-      "question": "In a flow network, what is the name of a node that hos only incoming flow?",
+      "question": "In a flow network, what is the name of a node that has only incoming flow?",
       "answers": ["sink"]
     },
     {
@@ -1087,8 +1071,7 @@
         { "text": "True", "correct": true },
         { "text": "False", "correct": false }
       ]
-    }
-    ,
+    },
     {
       "type": "mc",
       "question": "A flow with the largest possible value must exist",

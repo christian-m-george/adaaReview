@@ -6,7 +6,10 @@ import {
   faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 
-type Props = { answers: string[] };
+type Props = {
+  answers: string[];
+  setQuestion: React.Dispatch<React.SetStateAction<number>>;
+};
 
 const QuestionMap = (props: Props): JSX.Element => {
   return (
@@ -26,18 +29,28 @@ const QuestionMap = (props: Props): JSX.Element => {
         border: "1px solid grey",
       }}
     >
-      {props.answers.map((answer) => {
+      {props.answers.map((answer, i) => {
         if (answer === "correct") {
           return (
-            <div style={{ padding: 6 }}>
+            <button
+              style={{ padding: 6 }}
+              onClick={() => {
+                props.setQuestion(i);
+              }}
+            >
               <FontAwesomeIcon icon={faCheck} color={"green"}></FontAwesomeIcon>
-            </div>
+            </button>
           );
         } else if (answer === "wrong") {
           return (
-            <div style={{ padding: 6 }}>
+            <button
+              style={{ padding: 6 }}
+              onClick={() => {
+                props.setQuestion(i);
+              }}
+            >
               <FontAwesomeIcon icon={faXmark} color={"red"}></FontAwesomeIcon>
-            </div>
+            </button>
           );
         } else {
           return (
